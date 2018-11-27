@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/chal"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageButton
+
+            android:id="@+id/user_profile_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/profile_circular_border_imageview"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/photocercle" />
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_marginTop="190dp"
+            android:background="@drawable/prfile"
+            android:paddingBottom="24dp">
+
+            <ImageView
+                android:id="@+id/add_friend"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_toLeftOf="@+id/drop_down_option_menu"
+                android:src="@drawable/ic_action_user_add" />
+
+            <ImageView
+                android:id="@+id/drop_down_option_menu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_action_overflow" />
+
+            <TextView
+                android:id="@+id/user_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="65dp"
+                android:text="Ranjeet Kumar"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/user_profile_short_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_profile_name"
+                android:layout_alignStart="@+id/user_profile_name"
+                android:layout_alignLeft="@+id/user_profile_name"
+                android:layout_marginTop="8dp"
+                android:text="Verified with"
+                android:textColor="#fff"
+                android:textSize="15dp" />
+            <ImageView
+
+                android:src="@drawable/ic_email"
+                android:layout_marginTop="132dp"
+                android:layout_width="50dp"
+                android:background="@drawable/fblayout"
+                android:layout_marginLeft="45dp"
+                android:layout_height="45dp"
+                />
+            <ImageView
+                android:src="@drawable/ic_phone"
+                android:layout_marginTop="132dp"
+                android:layout_width="45dp"
+                android:background="@drawable/fblayout"
+                android:layout_marginLeft="165dp"
+                android:layout_height="45dp"/>
+            <ImageView
+                android:src="@drawable/fbicon"
+                android:layout_marginTop="133dp"
+                android:layout_width="45dp"
+                android:background="@drawable/fblayout"
+                android:layout_marginLeft="105dp"
+                android:layout_height="45dp"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="#fff"
+            android:layout_marginTop="375dp"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:elevation="10dp"
+                android:background="@drawable/whiteborder"
+                android:id="@+id/relLayout1">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/ic_magnify"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/fbicon" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ic_magnify"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="16dp"
+                    android:textColor="@color/fb"
+                    android:textStyle="bold"
+                    android:text="LINK YOUR FACEBOOK"
+                    android:singleLine="true" />
+
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/TVAccount"
+                android:background="@drawable/whiteborder"
+                android:layout_marginTop="68dp"
+                android:layout_width="match_parent"
+                android:text="ACCOUNT AND PAYMENT"
+                android:paddingTop="20dp"
+                android:textSize="16dp"
+                android:elevation="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="#07b9ff"
+                android:layout_height="60dp" />
+            <TextView
+                android:text="FEEDBACK AND HELP"
+                android:paddingTop="20dp"
+                android:textStyle="bold"
+                android:elevation="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#07b9ff"
+                android:paddingLeft="20dp"
+                android:background="@drawable/whiteborder"
+                android:layout_marginTop="135dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

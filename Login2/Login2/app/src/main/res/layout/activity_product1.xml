@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ServicePage">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="125dp"
+        android:layout_marginTop="0dp">
+
+        <RelativeLayout
+            android:id="@+id/Recyclerv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/pink"
+            android:scrollbars="horizontal" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="111dp"
+            android:layout_height="29dp"
+            android:textColor="#fff"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:text="ALL CATEGOERIES"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/Location_button"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="3dp"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_below="@+id/textView"
+            android:background="@color/pink"
+            android:paddingLeft="2dp"
+            android:text="Location"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textView"
+            android:layout_toEndOf="@+id/button"
+            android:layout_toRightOf="@+id/button"
+            android:src="@drawable/ic_down" />
+
+        <ImageView
+            android:id="@+id/IVSearch"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="232dp"
+            android:src="@drawable/ic_search"
+            android:showAsAction="collapseActionView|ifRoom"
+            android:actionViewClass="android.widget.AppMenu"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="270dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/filter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:id="@+id/Filters"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="22dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="5dp"
+            android:text="Filter"
+            android:textColor="#fff"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="69dp"
+            android:background="@drawable/edittextstyle"
+            android:padding="5dp"
+            android:paddingTop="0dp"
+            android:text="Society"
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <TextView
+            android:textColor="#000"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="102dp"
+            android:text="All Categoeries Of Society"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_marginLeft="89dp"
+            android:layout_marginTop="69dp"
+            android:layout_width="25dp"
+            android:src="@drawable/ic_cancel"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_marginTop="125dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffb74d">
+
+        <GridView
+            android:id="@+id/customgrid2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/os_texts"
+            android:numColumns="2" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+
+        <RelativeLayout
+            android:id="@+id/Recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/pink"
+            android:scrollbars="horizontal"
+            tools:ignore="RtlCompat" />
+
+        <ImageView
+            android:id="@+id/IVHome"
+            android:layout_width="36dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/ic_homes" />
+
+
+        <ImageView
+            android:id="@+id/IVProfile"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:src="@drawable/ic_profile" />
+        <TextView
+            android:text="Home"
+            android:textColor="@color/white"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="27dp"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Profile"
+            android:textSize="12dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="35dp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/tvsell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="160dp"
+        android:layout_marginBottom="23dp"
+        android:src="@drawable/camera" />
+
+</RelativeLayout>
